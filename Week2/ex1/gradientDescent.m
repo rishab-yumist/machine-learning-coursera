@@ -17,18 +17,13 @@ for iter = 1:num_iters
     %       of the cost function (computeCost) and gradient here.
     %
 
-  
-    delta = 1/m*(X'*X*theta-X'*y);
-  	theta =theta-alpha.*delta;
+    % θ = θ - ⍺δ
+    % δ = (1/m) Σ1->m (hθ(x) - y)
 
-    %  x = X(:,2);
-    % h = theta(1) + (theta(2) * x);
+    delta = 1/m* (X'*X*theta-X'*y);
+    theta = theta-alpha.*delta;
 
-    % thetaZero = theta(1) - alpha * (1/m) * sum(h-y);
-    % thetaOne = theta(1) - alpha * (1/m) * sum((h-y) .* x);
 
-    % theta = [thetaZero,thetaOne];
-    %
 
     % ============================================================
 

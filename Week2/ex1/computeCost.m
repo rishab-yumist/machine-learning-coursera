@@ -12,9 +12,9 @@ J = 0;
 % ====================== YOUR CODE HERE ======================
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
-% Formula J = 1/2m Σi->m (h𝚹(Xi) - Yi)
+% Formula J = 1/2m Σi->m (h𝚹(Xi) - Yi)^2
 
-J = (1/(2*m))*sum(((X*theta) - y).^2)
+J = (1 /(2 * m)) * (sum(((X  * theta) - y).^ 2));
 
 % =========================================================================
 
