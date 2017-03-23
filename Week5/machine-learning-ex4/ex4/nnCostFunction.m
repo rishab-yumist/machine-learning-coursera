@@ -16,6 +16,7 @@
 
 % Reshape nn_params back into the parameters Theta1 and Theta2, the weight matrices
 % for our 2 layer neural network
+% basically parsing the vectors back to matrices
 Theta1 = reshape(nn_params(1:hidden_layer_size * (input_layer_size + 1)), ...
                  hidden_layer_size, (input_layer_size + 1));
 
@@ -63,8 +64,6 @@ Theta2_grad = zeros(size(Theta2));
 %
 
 K = num_labels;
-
-
 Y = eye(K)(y,:); %Recode y to Y
 %PART 1
 
