@@ -17,10 +17,10 @@ sim = 0;
 %
 
 
-
+sim = exp(-1 * (x1-x2)'*(x1-x2)/(2*sigma*sigma)); % using A'*A to calculate sum over m terms
 
 
 
 % =============================================================
-    
+
 end
